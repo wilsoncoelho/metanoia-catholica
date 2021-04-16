@@ -1,0 +1,45 @@
+[
+    {
+        "id":"1",
+        "title":"Surrender Prayer",
+        "color":"crimson",
+        "textColor":"#444",
+        "subTitle":"JESUS PRAYER",
+        "audio":"false",
+        "video":"false",
+        "text":"true",
+        "screen":"SurrenderPrayer",
+        "image":"http://wilsoncoelho.com/images/surrender-prayer.jpg"
+        
+    },
+{
+    "id":"2",
+    "title":"Undoer of Knots",
+    "color":"#f5a442",
+
+    "textColor":"#444",
+    "subTitle":"PRAYER",
+    "audio":"true",
+    "video":"false",
+    "text":"true",
+    "screen":"SurrenderPrayer",
+    "image":"http://wilsoncoelho.com/images/mary.jpg"
+},
+{
+    "id":"3",
+    "title":"Today's Readings",
+    "color":"#BA3B46",
+    "textColor":"#444",
+    "subTitle":"READING",
+    "audio":"true",
+    "video":"false",
+    "text":"false",    "screen":"SurrenderPrayer",
+    "image":"http://wilsoncoelho.com/images/today-reading.jpeg"
+    
+}
+
+
+
+
+
+]

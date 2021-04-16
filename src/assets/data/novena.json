@@ -1,0 +1,46 @@
+[
+    {
+        "id":"1",
+        "title":"Joyful Mysteries",
+        "color":"#C38D9E",
+        "textColor":"#444",
+        "subTitle":"ROSARY",
+        "audio":"true",
+        "video":"false",
+        "text":"FALSE", "screen":"SurrenderPrayer",
+        "image":"http://wilsoncoelho.com/images/joyful.jpg"
+    },
+    {
+        "id":"2",
+        "title":"Luminous Mysteries",
+        "color":"#85DCBB",
+        "textColor":"#444",
+        "subTitle":"ROSARY",
+        "audio":"true",
+        "video":"false",
+        "text":"false", "screen":"SurrenderPrayer",
+        "image":"http://wilsoncoelho.com/images/luminous.jpg"
+    },
+    {
+        "id":"3",
+        "title":"Sorrowful Mysteries",
+        "color":"#E27D60",
+        "textColor":"#444",
+        "subTitle":"ROSARY",
+        "audio":"true",
+        "video":"false",
+        "text":"false", "screen":"SurrenderPrayer",
+        "image":"http://wilsoncoelho.com/images/sorrowful.jpg"
+    },
+    {
+        "id":"4",
+        "title":"Glorious Mysteries",
+        "color":"#E8A87C",
+        "textColor":"#444",
+        "subTitle":"ROSARY",
+        "audio":"true",
+        "video":"false",
+        "text":"false", "screen":"SurrenderPrayer",
+        "image":"http://wilsoncoelho.com/images/ressurection.jpg"
+    }
+]
