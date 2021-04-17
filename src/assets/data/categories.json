@@ -9,7 +9,7 @@
         "video":"false",
         "text":"true",
         "screen":"SurrenderPrayer",
-        "image":"http://wilsoncoelho.com/images/surrender-prayer.jpg"
+        "image":"https://wilsoncoelho.com/images/surrender-prayer.jpg"
         
     },
 {
@@ -23,7 +23,7 @@
     "video":"false",
     "text":"true",
     "screen":"SurrenderPrayer",
-    "image":"http://wilsoncoelho.com/images/mary.jpg"
+    "image":"https://wilsoncoelho.com/images/mary.jpg"
 },
 {
     "id":"3",
@@ -34,7 +34,7 @@
     "audio":"true",
     "video":"false",
     "text":"false",    "screen":"SurrenderPrayer",
-    "image":"http://wilsoncoelho.com/images/today-reading.jpeg"
+    "image":"https://wilsoncoelho.com/images/today-reading.jpeg"
     
 }
 

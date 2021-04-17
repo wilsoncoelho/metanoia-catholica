@@ -1,24 +1,40 @@
-import React ,{useState, useEffect}from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
-import shorthash from 'shorthash2'
-const CacheImage = () => {
+import React from 'react';
+import {StyleSheet, Text, View, Image} from 'react-native';
+import shorthash from 'shorthash2';
+import {FileSystem} from 'expo-file-system';
+export default class CacheImage extends React.Component {
+  state = {
+    source: null,
+  };
 
-const [source, setSource] = useState(null)
-
-useEffect(() => {
-const {uri} = this.props
-const name = shorthash(uri)
-    
-    return () => {
-        
+  componentDidMount = async () => {
+    const {uri} = this.props;
+    const name = shorthash.unique(uri);
+    console.log(name);
+    const path = `${FileSystem.cacheDirectory}${name}`;
+    const image = await FileSystem.getInfoAsync(path);
+    if (image.exists) {
+      console.log('read image from cache');
+      this.setState({
+        source: {
+          uri: image.uri,
+        },
+      });
+      return;
     }
-}, [])
 
-    return (
-        <Image style={props.style} source={source}/>
-    )
+    console.log('downloading image to cache');
+    const newImage = await FileSystem.downloadAsync(uri, path);
+    this.setState({
+      source: {
+        uri: newImage.uri,
+      },
+    });
+  };
+
+  render() {
+    return <Image style={this.props.style} source={this.state.source} />;
+  }
 }
 
-export default CacheImage
 
-const styles = StyleSheet.create({})

@@ -1,9 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
+import CacheImage from '../shared/CacheImage';
 const Card = props => {
-  const [image, setImage] = useState(props.image);
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    setImage(props.image);
+    // console.log(`${image} done`)
+    return () => {
+      setImage();
+    };
+  }, [image]);
 
   return (
     <>
@@ -18,13 +26,12 @@ const Card = props => {
                 styles.container,
                 {
                   backgroundColor: props.color,
-
                   width: props.cardWidth,
                   height: props.cardHeight,
                 },
               ]}>
               <Image
-                source={{uri:image}}
+                source={{uri: image}}
                 style={[
                   styles.container,
                   {
@@ -43,7 +50,6 @@ const Card = props => {
                 flex: 1,
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-              
               }}>
               <Text
                 style={{

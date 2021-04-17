@@ -57,7 +57,7 @@ const HomeScreen = (props) => {
 
         <View>
           <View style={styles.headingTextContainer}>
-            <Text style={styles.headingText}>Holy Rosary</Text>
+            <Text style={styles.headingText}>Guided Rosary Meditations</Text>
           </View>
           <View style={styles.categoryContainer}>
             <FlatList
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderColor: 'black',
     borderRadius: 10,
-    elevation: 5,
+    // elevation: 5,
     alignSelf: 'center',
   },
   headerText: {
